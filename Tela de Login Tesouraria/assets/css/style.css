@@ -1,0 +1,156 @@
+/* Importando Fonte
+--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+/* Setando variaveis de cor
+----------------------------*/
+:root {
+    --primary: #fff;
+    --secondary: #ffffff;
+    --primaryBg: #5C0B00;
+    --secondaryBg: #6e0f02;
+
+    --inputShadow: #0000001c;
+    --inputHover: #eeeeee75;
+    --inputLabel: #000000c0;
+    --inputPlaceHolder: #000000be;
+}
+
+/* Formatações Gerais
+----------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Signika", sans-serif;
+}
+
+/* Formatando o lado esquerdo da página
+----------------------------------------*/
+body {
+    background-image: url(../images/Hippo_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.form {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary);
+    padding: 3rem;
+}
+
+.form-header {
+    margin-top: -195px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-header h1 { /* Tamanho do título */
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+.form-header p { /* Tamanho do paragrafo */
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+}
+
+.input-box input {
+    margin: 0.2rem 0;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid var(--primaryBg);
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px var(--inputShadow);
+}
+
+.input-box input:hover {
+    background-color: var(--inputHover);
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid var(--primaryBg);
+}
+
+.input-box label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--inputLabel);
+}
+
+.input-box input::placeholder {
+    color: var(--inputPlaceHolder);
+    font-size: 0.95rem;
+}
+
+.login-button button {
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    background-color: var(--primaryBg);
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: var(--secondaryBg);
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+/* Formatando Logos
+--------------------*/
+.logo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;    
+}
+
+#hippo-logo {
+    width: 31rem;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+
+#cd2-logo {
+    width: 7rem;
+    margin-top: 500px;
+    margin-left: 750px;
+}
+
+
