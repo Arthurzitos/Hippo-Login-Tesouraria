@@ -25,70 +25,66 @@
     font-family: "Signika", sans-serif;
 }
 
-/* Formatando o lado esquerdo da página
-----------------------------------------*/
+/* Formatando o Background
+---------------------------*/
 .background-container {
     background-image: url(../images/Hippo_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
+/* Divisao da página
+---------------------*/
+.main-container {
     display: flex;
 }
 
-.form {
-    width: 40%;
-    height: 100vh;
+/* Formatando lado esquerdo da página
+--------------------------------------*/
+.form-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    flex-direction: column;
-    background-color: var(--secondary);
-    padding: 3rem;
-
-    border: 1px solid red;
+    background: var(--primary);
+    width: 40vw;
+    height: 100vh;
 }
 
-.form-header {
-    margin-top: -195px;
-    margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* Textos do topo do formulário
+--------------------------------*/
+.form-text {
+    width: 75%;
+    margin: 50px 0 10px 50px;
 }
 
-.form-header h1 { /* Tamanho do título */
+.form-container h1 {
     font-weight: 400;
     font-size: 60px;
     letter-spacing: 3px;
-    margin-bottom: 1rem;
 }
 
-.form-header p { /* Tamanho do paragrafo */
+.form-text p {
     font-weight: 300;
     font-size: 20px;
     letter-spacing: 0.5px;
 }
 
-.input-group {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-}
-
+/* Inputs
+----------*/
+.input-group,
 .input-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
-
+    padding: 1.5rem;
 }
 
-.input-box input {
-    margin: 0.2rem 0;
-    padding: 0.5rem 1.2rem;
+.input-box input{
+    width: 380px;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
     border: 1px solid var(--primaryBg);
     border-radius: 5px;
     box-shadow: 1px 1px 6px var(--inputShadow);
@@ -114,7 +110,7 @@
 }
 
 .login-button button {
-    width: 100%;
+    width: 85%;
     margin-top: 1rem;
     border: none;
     background-color: var(--primaryBg);
@@ -134,25 +130,20 @@
     color: var(--primary);
 }
 
-/* Formatando Logos
---------------------*/
 .logo {
-    width: 60%;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    gap: 75vh;
+    width: 55vw;
 }
 
 #hippo-logo {
-    width: 31rem;
-    margin: 0 auto;
-    margin-top: 50px;
-    
+    width: 30vw;
+    margin-top: 25px;
+    align-self: center;
 }
 
 #cd2-logo {
-    width: 7rem;
-    margin-top: 500px;
-    margin-left: 750px;
+    width: 7vw;
+    align-self: flex-end;
 }
-
-

@@ -4,40 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tesouraria</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Login Tesouraria</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <div class="background-container">
-        <div class="container">
-            <div class="form">
+        <div class="main-container">
+            <div class="form-container">
                 <form action="#">
-                    <div class="form-header">
-                        <div class="title">
-                            <h1>Bem vindo(a)</h1>
-                            <p>
-                                Entre com seus dados para realizar o <br> fechamento do caixa.
-                            </p>
-                        </div>
+                    <div class="form-text">
+                        <h1>Bem Vindo(a)</h1>
+                        <p>
+                            Entre com seus dados para realizar o fechamento do caixa.
+                        </p>
                     </div>
+    
                     <div class="input-group">
                         <div class="input-box">
                             <label for="user">Usuário</label>
-                            <input type="text" name="user" id="user" placeholder="Digite sua matrícula/CPF/E-mail" required>
+                            <input type="text" name="user" placeholder="Operador" required>
                         </div>
+    
                         <div class="input-box">
                             <label for="password">Senha</label>
-                            <input type="password" name="password" id="password" placeholder="Digite sua senha de acesso" required>
+                            <input type="password" name="password" placeholder="Senha de acesso">
                         </div>
-                    </div>
-                    <div class="login-button">
-                        <button type="submit"><a href="#">Entrar</a></button>
+    
+                        <div class="login-button">
+                            <button type="submit">
+                                <a href="#">Entrar</a>
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>
+
             <div class="logo">
-                <img src="assets/images/hippo_logo.png" id="hippo-logo" alt="logo Hippo">
-                <img src="assets/images/cd2_logo.png" id="cd2-logo" alt="cd2 Hippo">
+                <img src="/assets/images/hippo_logo.png" alt="Logo Hippo" id="hippo-logo">
+
+                <img src="/assets/images/cd2_logo.png" alt="Logo cd2" id="cd2-logo">
             </div>
         </div>
     </div>
