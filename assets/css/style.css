@@ -57,7 +57,7 @@
 --------------------------------*/
 .form-text {
     width: 75%;
-    margin: 50px 0 10px 50px;
+    margin: 50px 0 10px 7px;
 }
 
 .form-container h1 {
@@ -78,11 +78,15 @@
 .input-box {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
+    justify-content: center;
+    padding: 0.2rem;
 }
 
 .input-box input{
-    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
     margin: 0.5rem 0;
     padding: 0.5rem;
     border: 1px solid var(--primaryBg);
@@ -110,7 +114,7 @@
 }
 
 .login-button button {
-    width: 85%;
+    width: 70%;
     margin-top: 1rem;
     border: none;
     background-color: var(--primaryBg);
