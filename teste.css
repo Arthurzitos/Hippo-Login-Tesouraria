@@ -25,68 +25,57 @@
     font-family: "Signika", sans-serif;
 }
 
-/* Formatando o lado esquerdo da página
-----------------------------------------*/
+/* Formatando o Background
+---------------------------*/
 .background-container {
-    background-image: url(../images/Hippo_bg.png);
+    background-image: url(/assets/images/Hippo_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
+/* Formatando lado esquerdo da página
+--------------------------------------*/
+.form-container {
     display: flex;
-}
-
-.form {
-    width: 40%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    flex-direction: column;
-    background-color: var(--secondary);
-    padding: 3rem;
-
-    border: 1px solid red;
+    background: var(--primary);
+    width: 40vw;
+    height: 100vh;
 }
 
-.form-header {
-    margin-top: -195px;
-    margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* Textos do topo do formulário
+--------------------------------*/
+.form-text {
+    width: 75%;
+    margin: 50px 0 10px 30px;
 }
 
-.form-header h1 { /* Tamanho do título */
+.form-container h1 {
     font-weight: 400;
     font-size: 60px;
     letter-spacing: 3px;
-    margin-bottom: 1rem;
 }
 
-.form-header p { /* Tamanho do paragrafo */
+.form-text p {
     font-weight: 300;
     font-size: 20px;
     letter-spacing: 0.5px;
 }
 
-.input-group {
+/* Inputs
+----------*/
+.input-group,
+.input-box {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-.input-box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-
-}
-
-.input-box input {
+.input-box input{
     margin: 0.2rem 0;
     padding: 0.5rem 1.2rem;
     border: 1px solid var(--primaryBg);
@@ -133,26 +122,3 @@
     font-weight: 500;
     color: var(--primary);
 }
-
-/* Formatando Logos
---------------------*/
-.logo {
-    width: 60%;
-    display: flex;
-    flex-direction: column;    
-}
-
-#hippo-logo {
-    width: 31rem;
-    margin: 0 auto;
-    margin-top: 50px;
-    
-}
-
-#cd2-logo {
-    width: 7rem;
-    margin-top: 500px;
-    margin-left: 750px;
-}
-
-
